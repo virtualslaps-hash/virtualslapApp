@@ -1,29 +1,27 @@
+import SlapSlay from './SlapSlay.jsx'
+
 export default function Hero() {
   return (
     <section className="hero min-h-screen flex flex-col justify-end px-12 pb-20 max-md:px-6 max-md:pb-[60px]">
-      <div className="reveal eyebrow-line font-mono text-[11px] tracking-[0.15em] uppercase text-brand-dim mb-6 flex items-center gap-3">
-        Hyderabad · Est. 2016 · Phase One Active
-      </div>
-
       <h1 className="hero-headline reveal reveal-delay-1 font-display font-extrabold leading-[0.9] tracking-[-0.03em] uppercase mb-12">
-        Gaming's<br />
-        Next<br />
+        Build<br />
+        to<br />
         <em className="font-serif italic font-normal normal-case tracking-[-0.02em]">
-          Operating
+          <SlapSlay />
         </em>
-        <br />
-        Layer
       </h1>
 
       <div className="flex items-end justify-between gap-12 max-md:flex-col max-md:items-start max-md:gap-6">
         <p className="reveal reveal-delay-2 max-w-[400px] font-mono text-[13px] leading-[1.8] text-brand-dim font-light">
-          The capital is moving. Global studios are positioning.
+          A studio. A network. A home for gaming.
           <br />
-          Founders are shipping real games into a market
+          Built by gaming people, for gaming people —
           <br />
-          that hasn't had serious infrastructure — until now.
+          founders, indie devs, streamers, podcasters, creators,
           <br />
-          We are that infrastructure.
+          and the institutions shaping what's next.
+          <br />
+          In this together, from day one.
         </p>
         <div className="reveal reveal-delay-3 flex gap-12 shrink-0 max-md:gap-8">
           {[

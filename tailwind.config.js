@@ -9,6 +9,8 @@ export default {
           white: '#ffffff',
           offwhite: '#e8e8e0',
           dim: '#888880',
+          yellow: '#D4A017',
+          yellowDim: '#8B6D0E',
         },
         border: {
           DEFAULT: 'rgba(255,255,255,0.08)',

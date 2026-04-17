@@ -2,47 +2,52 @@ import SectionLabel from './SectionLabel.jsx'
 
 const PHASES = [
   {
-    num: 'Phase 01 · Now',
-    title: 'Services & Advisory',
+    label: 'Capability',
+    num: '01',
+    title: 'Advisory & Dealmaking',
     desc:
-      'Consulting for gaming startups, indie studios, corporates, and government bodies entering gaming. Founder-led dealmaking, operator execution.',
-    active: true,
+      'Operator-led consulting for gaming founders, studios, corporates, and government bodies. Strategy, partnerships, regulatory navigation, and the introductions that move projects forward.',
   },
   {
-    num: 'Phase 02 · Parallel',
-    title: 'VS Studios',
+    label: 'Capability',
+    num: '02',
+    title: 'Studio Output',
     desc:
-      'Lean studio output. AI-tooled freemium mobile games on Play Store and iOS. Presence and learning, not just hit-chasing.',
+      'Our own games, shipped under the Virtual Slaps Studios banner. AI-native production, mobile-first, experimental. The studio exists so we operate in the same reality as the people we advise.',
   },
   {
-    num: 'Phase 03 · Next',
-    title: 'Indie Distribution',
+    label: 'Capability',
+    num: '03',
+    title: 'Distribution & GTM',
     desc:
-      'Indie devs build great games. We solve what comes after — publishing, marketing, monetization, discovery. AI-powered, high-margin.',
+      'Everything that happens after a game is built — publishing, ASO, community, monetization, marketing infrastructure. The layer indie developers and small studios are structurally missing.',
   },
   {
-    num: 'Phase 04 · Building',
-    title: 'Content Production',
+    label: 'Capability',
+    num: '04',
+    title: 'Content & Media',
     desc:
-      'Gaming podcasts, streamer support, video, editorial. The media and narrative layer that serious ecosystems run on.',
+      "Gaming podcasts, editorial, video, and creator collaborations. Serious ecosystems have a media layer. We're building ours — and helping others build theirs.",
   },
   {
-    num: 'Phase 05 · Vision',
-    title: 'Hacker House + Fund',
+    label: 'Capability',
+    num: '05',
+    title: 'Builder Space & Capital',
     desc:
-      'Physical builder space in Hyderabad. Infrastructure for founders, streamers, pro players. A small fund backing studios we believe in.',
+      'A physical home for founders, creators, and operators in gaming — paired with a small, high-conviction capital vehicle for the studios we believe in. Infrastructure, not just a cheque.',
   },
 ]
 
 export default function WhatWeAre() {
   return (
     <section className="py-[120px] px-12 max-md:py-20 max-md:px-6" id="what-we-are">
-      <SectionLabel>001 — Identity</SectionLabel>
+      <SectionLabel><span className="text-brand-yellow">001</span> — What We Do</SectionLabel>
       <p className="big-statement reveal reveal-delay-1 font-display font-bold leading-[1.15] tracking-[-0.02em] max-w-[900px]">
-        <em className="font-serif italic font-normal">Y Combinator's hacker house</em>
+        A studio. A network.
         <br />
-        meets ESPN —<br />
-        <span className="text-brand-dim">built for the next gaming frontier.</span>
+        <em className="font-serif italic font-normal">A home</em> for gaming —
+        <br />
+        <span className="text-brand-dim">advisory, studio, content, distribution, and capital, under one roof.</span>
       </p>
 
       <div className="reveal reveal-delay-2 grid grid-cols-5 border-t border-white/10 mt-20 max-md:grid-cols-2">
@@ -55,8 +60,9 @@ export default function WhatWeAre() {
               'max-md:nth-[5]:border-r-0',
             ].join(' ')}
           >
-            <div className="font-mono text-[10px] tracking-[0.15em] text-brand-dim mb-6">
-              {p.num}
+            <div className="font-mono text-[10px] tracking-[0.15em] mb-6">
+              <span className="text-brand-dim">{p.label} · </span>
+              <span className="text-brand-yellow">{p.num}</span>
             </div>
             {p.active && (
               <div className="absolute top-8 right-8 w-[6px] h-[6px] rounded-full bg-white animate-pulse" />

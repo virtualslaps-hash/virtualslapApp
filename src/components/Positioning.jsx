@@ -21,7 +21,7 @@ const IS = [
 export default function Positioning() {
   return (
     <section className="py-[120px] px-12 max-md:py-20 max-md:px-6">
-      <SectionLabel>005 — Positioning</SectionLabel>
+      <SectionLabel><span className="text-brand-yellow">005</span> — Positioning</SectionLabel>
       <p className="big-statement reveal reveal-delay-1 font-display font-bold leading-[1.15] tracking-[-0.02em] max-w-[900px]">
         We occupy the gap<br />
         <em className="font-serif italic font-normal">nobody else</em>

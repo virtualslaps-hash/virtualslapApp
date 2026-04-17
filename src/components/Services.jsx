@@ -34,12 +34,10 @@ const SERVICES = [
 export default function Services() {
   return (
     <section className="pb-[120px] px-12 max-md:pb-20 max-md:px-6" id="services">
-      <SectionLabel>002 — Services</SectionLabel>
+      <SectionLabel><span className="text-brand-yellow">002</span> — Services</SectionLabel>
       <p className="big-statement reveal reveal-delay-1 font-display font-bold leading-[1.15] tracking-[-0.02em] max-w-[900px]">
-        Phase One is<br />
-        <em className="font-serif italic font-normal">services-first.</em>
-        <br />
-        <span className="text-brand-dim">Here's what that means.</span>
+        Where we plug in<br />
+        <em className="font-serif italic font-normal">right now.</em>
       </p>
 
       <div className="reveal reveal-delay-2 grid grid-cols-2 gap-px bg-white/10 border border-white/10 mt-16 max-md:grid-cols-1">
@@ -48,7 +46,7 @@ export default function Services() {
             key={s.num}
             className="bg-black p-12 relative overflow-hidden transition-colors duration-300 hover:bg-white/[0.03]"
           >
-            <div className="font-mono text-[48px] font-light text-white/[0.06] absolute top-6 right-8 leading-none">
+            <div className="font-mono text-[48px] font-light text-brand-yellow/20 absolute top-6 right-8 leading-none">
               {s.num}
             </div>
             <div className="font-display font-bold text-[22px] tracking-[-0.02em] mb-4 leading-[1.2]">

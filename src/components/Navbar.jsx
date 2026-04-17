@@ -22,7 +22,7 @@ export default function Navbar() {
         href="#"
         className="font-display font-extrabold text-[18px] tracking-[-0.02em] text-white flex items-center gap-[10px] no-underline"
       >
-        <div className="w-7 h-7 border-[1.5px] border-white rounded-[4px] flex items-center justify-center text-[11px] font-extrabold">
+        <div className="w-7 h-7 border-[1.5px] border-brand-yellow text-brand-yellow rounded-[4px] flex items-center justify-center text-[11px] font-extrabold">
           VS
         </div>
         Virtual Slaps
@@ -30,7 +30,7 @@ export default function Navbar() {
 
       <ul className="flex items-center gap-10 list-none max-md:hidden">
         {[
-          { href: '#what-we-are', label: 'What We Are' },
+          { href: '#what-we-are', label: 'What We Do' },
           { href: '#services', label: 'Services' },
           { href: '#market', label: 'Market' },
           { href: '#contact', label: 'Contact' },

@@ -100,7 +100,7 @@ section { position: relative; z-index: 10; }
 }
 .marquee-item::after {
   content: '★';
-  color: #fff;
+  color: #D4A017;
   font-size: 8px;
   margin-left: 48px;
 }
@@ -112,8 +112,42 @@ section { position: relative; z-index: 10; }
 }
 .is-list li::before {
   content: '+';
-  color: #fff;
+  color: #D4A017;
   font-weight: 700;
   flex-shrink: 0;
   margin-right: 16px;
+}
+
+/* ---------- Letter swap (Sla[p] <-> Sla[y]) ---------- */
+.letter-swap {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+.letter-swap > span {
+  display: inline-block;
+  will-change: opacity, transform;
+}
+/* letter-a stays in normal flow: it sets the width and baseline */
+.letter-swap .letter-a {
+  color: #D4A017;
+  animation: letterSwapA 2.4s ease-in-out infinite;
+}
+/* letter-b overlays letter-a at the exact same position */
+.letter-swap .letter-b {
+  color: #D4A017;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: letterSwapB 2.4s ease-in-out infinite;
+}
+@keyframes letterSwapA {
+  0%, 40%   { opacity: 1; transform: translateY(0); }
+  50%, 90%  { opacity: 0; transform: translateY(-0.12em); }
+  100%      { opacity: 1; transform: translateY(0); }
+}
+@keyframes letterSwapB {
+  0%, 40%   { opacity: 0; transform: translateY(0.12em); }
+  50%, 90%  { opacity: 1; transform: translateY(0); }
+  100%      { opacity: 0; transform: translateY(0.12em); }
 }

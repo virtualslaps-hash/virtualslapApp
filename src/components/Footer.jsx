@@ -23,7 +23,7 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      <div className="font-mono text-[11px] text-white/10 font-light">Phase One · 2025</div>
+      <div className="font-mono text-[11px] text-white/10 font-light">Hyderabad · 2025</div>
     </footer>
   )
 }

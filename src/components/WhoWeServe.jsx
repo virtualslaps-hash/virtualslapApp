@@ -10,23 +10,23 @@ const CARDS = [
   },
   {
     icon: '🎮',
-    title: 'Indie Studios',
+    title: 'Indie Devs & Studios',
     desc:
-      "Teams building real games that struggle with everything after the build — distribution, discovery, monetization, compliance. That's our territory.",
+      "Teams building real games who need help with everything after the build — distribution, discovery, monetization, community. That's our territory.",
     delay: 2,
   },
   {
-    icon: '🏛️',
-    title: 'Government Bodies',
+    icon: '🎙️',
+    title: 'Streamers & Podcasters',
     desc:
-      'Public institutions designing gaming programs need partners who understand both the policy layer and the ecosystem on the ground. We do.',
+      "Gaming's voices — the streamers, podcasters, and video creators building audiences of their own. We amplify, collaborate, and build the media layer together.",
     delay: 3,
   },
   {
-    icon: '🏢',
-    title: 'Corporates Entering Gaming',
+    icon: '✴️',
+    title: 'Content Creators',
     desc:
-      'Established companies making strategic moves into gaming need a guide who operates in the space — not a generalist who read the market report.',
+      "Editorial writers, video essayists, and gaming journalists. The ones documenting the scene and shaping how it's understood. There's a home here for you too.",
     delay: 1,
   },
   {
@@ -37,10 +37,10 @@ const CARDS = [
     delay: 2,
   },
   {
-    icon: '🌐',
-    title: 'Global Studios, Market Entry',
+    icon: '🏛️',
+    title: 'Institutions & Corporates',
     desc:
-      "International studios entering new markets need a local operator with real relationships across government, platforms, and the creator economy. That's us.",
+      'Government bodies, academic institutions, and companies making real moves into gaming. When the work is serious, so is who you partner with.',
     delay: 3,
   },
 ]
@@ -48,11 +48,13 @@ const CARDS = [
 export default function WhoWeServe() {
   return (
     <section className="pb-[120px] px-12 max-md:pb-20 max-md:px-6">
-      <SectionLabel>003 — Clients</SectionLabel>
+      <SectionLabel><span className="text-brand-yellow">003</span> — The People We Build With</SectionLabel>
       <p className="big-statement reveal reveal-delay-1 font-display font-bold leading-[1.15] tracking-[-0.02em] max-w-[900px]">
-        <span className="text-brand-dim">We work with whoever</span>
+        <span className="text-brand-dim">If you're building,</span>
         <br />
-        is <em className="font-serif italic font-normal">serious</em> about gaming.
+        creating, or betting on gaming —
+        <br />
+        <em className="font-serif italic font-normal">you're one of us.</em>
       </p>
 
       <div className="grid grid-cols-3 gap-8 mt-16 max-md:grid-cols-1">
