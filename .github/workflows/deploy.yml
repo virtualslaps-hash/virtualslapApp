@@ -1,41 +1,55 @@
-name: Deploy to GitHub Pages
+name: Deploy to Hostinger
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: pages
+  group: deploy-hostinger
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy via FTP to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # FTPS is recommended. If your Hostinger plan is FTP-only, switch to "ftp".
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/
+          # Target directory on the Hostinger server. Override by setting
+          # a repository variable named FTP_SERVER_DIR (Settings → Secrets and variables → Variables).
+          # Common values:
+          #   - "/public_html/"                          (primary domain)
+          #   - "/domains/yourdomain.com/public_html/"   (add-on domain)
+          #   - "/public_html/subdomain/"                (subdomain)
+          server-dir: ${{ vars.FTP_SERVER_DIR || '/public_html/' }}
+          # Clean remote files not present locally so stale assets don't linger.
+          # Keep .htaccess and any other files you manage manually on the server.
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.htaccess
