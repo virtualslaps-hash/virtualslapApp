@@ -23,8 +23,8 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      <div className="flex items-center">
-        <img src="/assets/vs_logo_white.png" alt="Virtual Slaps" className="h-6 w-auto opacity-40" />
+      <div className="flex items-center font-serif italic" style={{fontSize: "38px"}}>
+      Virtual Sla<span className="text-brand-yellow">p</span>s
       </div>
     </footer>
   )

@@ -20,13 +20,15 @@ export default function Navbar() {
     >
       <a
         href="#"
-        className="flex items-center no-underline"
+        className="flex items-center no-underline italic font-serif"
+        style={{fontSize: "75px"}}
       >
-        <img
+        {/* <img
           src="/assets/vs_logo_white.png"
           alt="Virtual Slaps"
           className="h-16 w-auto"
-        />
+        /> */}
+        Virtual Sla<span className="text-brand-yellow">p</span>s
       </a>
 
       <ul className="flex items-center gap-10 list-none max-md:hidden">
