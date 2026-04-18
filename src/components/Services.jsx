@@ -5,14 +5,14 @@ const SERVICES = [
     num: '01',
     title: 'Ecosystem Architecture',
     desc:
-      'You want to enter a gaming market at inflection — as a corporate, a fund, or a government body. You need someone who knows which doors open, which relationships matter, and what the actual landscape looks like on the ground in 2025. We design gaming programs, incubation mandates, and market-entry strategies built on how ecosystems actually work, not how reports describe them.',
+      'You want to enter a gaming market at inflection — as a corporate, a fund, or a government body. You need someone who knows which doors open, which relationships matter, and what the actual landscape looks like on the ground. We design gaming programs, incubation mandates, and market-entry strategies built on how ecosystems actually work, not how reports describe them.',
     tag: 'Corporates · Govt Bodies · Investors',
   },
   {
     num: '02',
     title: 'Founder-to-Founder Advisory',
     desc:
-      "Gaming founders don't need another consultant handing them a deck. They need an operator who's navigated the same rooms — government, corporate, VC, media. We get on the field: fundraising strategy, partnership structuring, regulatory navigation, and introductions that only come from a decade of ecosystem work.",
+      "Gaming founders don't need another consultant handing them a deck. They need an operator who's navigated the same rooms — government, corporate, VC, media. We get on the field: fundraising strategy, partnership structuring, regulatory navigation, and introductions that only come from decades of ecosystem work.",
     tag: 'Gaming Startups · Indie Studios',
   },
   {
@@ -26,7 +26,7 @@ const SERVICES = [
     num: '04',
     title: 'Distribution & GTM for Indie Devs',
     desc:
-      'Indie devs are building genuinely good games. The gap is everything after the build — store listing strategy, ASO, community seeding, influencer pipelines, monetization architecture, publisher conversations. We close that gap. AI-powered where possible, hands-on where it matters.',
+      'You built the game. We\'ll get it to the players. Distribution, community, and growth — handled digitally, so you can stay in build mode.',
     tag: 'Indie Devs · Mobile-First Studios',
   },
 ]

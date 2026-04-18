@@ -1,10 +1,10 @@
 import SectionLabel from './SectionLabel.jsx'
 
 const NOT = [
-  'A VC deploying into studios (that\'s Lumikai, BITKRAFT, Krafton)',
+  'A VC deploying into studios',
   'A game studio chasing hit titles',
   'A generalist accelerator that added a gaming track',
-  'A policy shop that discovered gaming in 2023',
+  'A policy shop that discovered gaming',
   'An agency that runs campaigns for gaming brands',
   'A coworking space with gaming aesthetics',
 ]
@@ -13,7 +13,7 @@ const IS = [
   'A gaming-native operator — services first, investment later',
   'The access layer: government, corporate, VC, and ecosystem in one room',
   'A studio that ships its own games while advising others',
-  'The distribution and GTM infrastructure indie devs don\'t have',
+  'The digital growth partner indie devs and studios never had',
   'The content and media voice that emerging gaming markets lack',
   'The early version of a gaming mafia',
 ]

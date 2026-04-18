@@ -18,7 +18,6 @@ export default function Hero() {
           Built by gaming people, for gaming people —
           <br />
           founders, indie devs, streamers, podcasters, creators,
-          <br />
           and the institutions shaping what's next.
           <br />
           In this together, from day one.

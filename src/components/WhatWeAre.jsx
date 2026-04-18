@@ -13,14 +13,14 @@ const PHASES = [
     num: '02',
     title: 'Studio Output',
     desc:
-      'Our own games, shipped under the Virtual Slaps Studios banner. AI-native production, mobile-first, experimental. The studio exists so we operate in the same reality as the people we advise.',
+      'Our own games, shipped under the Virtual Slaps Studios banner. AI-native production, mobile-first, experimental. The studio exists so we operate in the same reality as the people we help.',
   },
   {
     label: 'Capability',
     num: '03',
     title: 'Distribution & GTM',
     desc:
-      'Everything that happens after a game is built — publishing, ASO, community, monetization, marketing infrastructure. The layer indie developers and small studios are structurally missing.',
+      'You built the game. We\'ll get it to the players. Distribution, community, and growth — handled digitally, so you can stay in build mode.',
   },
   {
     label: 'Capability',

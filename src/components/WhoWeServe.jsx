@@ -12,7 +12,7 @@ const CARDS = [
     icon: '🎮',
     title: 'Indie Devs & Studios',
     desc:
-      "Teams building real games who need help with everything after the build — distribution, discovery, monetization, community. That's our territory.",
+      "Teams building real games who need a digital partner for everything that comes after — getting it played, growing the community, and building the audience it deserves.",
     delay: 2,
   },
   {

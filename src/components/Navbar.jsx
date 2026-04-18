@@ -20,12 +20,13 @@ export default function Navbar() {
     >
       <a
         href="#"
-        className="font-display font-extrabold text-[18px] tracking-[-0.02em] text-white flex items-center gap-[10px] no-underline"
+        className="flex items-center no-underline"
       >
-        <div className="w-7 h-7 border-[1.5px] border-brand-yellow text-brand-yellow rounded-[4px] flex items-center justify-center text-[11px] font-extrabold">
-          VS
-        </div>
-        Virtual Slaps
+        <img
+          src="/assets/vs_logo_white.png"
+          alt="Virtual Slaps"
+          className="h-16 w-auto"
+        />
       </a>
 
       <ul className="flex items-center gap-10 list-none max-md:hidden">

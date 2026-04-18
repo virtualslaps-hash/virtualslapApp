@@ -18,7 +18,7 @@ export default function CTA() {
       </p>
       <div className="flex gap-4 justify-center items-center relative z-[1] max-md:flex-col">
         <a
-          href="mailto:hello@virtualslaps.com"
+          href="mailto:virtualslaps@virtualslaps.com"
           className="font-mono text-[12px] tracking-[0.08em] uppercase font-medium text-black bg-brand-yellow px-10 py-4 no-underline transition-opacity duration-200 hover:opacity-85 inline-block"
         >
           Start a Conversation
