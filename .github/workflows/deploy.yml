@@ -34,8 +34,12 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # FTPS is recommended. If your Hostinger plan is FTP-only, switch to "ftp".
-          protocol: ftps
+          # Protocol options:
+          #   - "ftp"          plain FTP (port 21) — most compatible with Hostinger shared
+          #   - "ftps"         FTP over TLS (port 21, upgrades with AUTH TLS)
+          #   - "ftps-legacy"  FTPS on self-signed certs
+          # If this action fails entirely, your plan may be SFTP-only (port 22) — needs a different action.
+          protocol: ftp
           port: 21
           local-dir: ./dist/
           # Target directory on the Hostinger server. Override by setting
