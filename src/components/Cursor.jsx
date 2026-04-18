@@ -9,28 +9,37 @@ export default function Cursor() {
     const ring = ringRef.current
     if (!dot || !ring) return
 
+    const pointInRect = (x, y, r) =>
+      x >= r.left && x <= r.right && y >= r.top && y <= r.bottom
+
+    const isOverLight = (x, y) => {
+      const lights = document.querySelectorAll('[data-cursor="light"]')
+      for (const el of lights) {
+        if (pointInRect(x, y, el.getBoundingClientRect())) return true
+      }
+      return false
+    }
+
     const onMove = (e) => {
-      const x = e.clientX + 'px'
-      const y = e.clientY + 'px'
-      dot.style.left = x
-      dot.style.top = y
-      ring.style.left = x
-      ring.style.top = y
+      const x = e.clientX
+      const y = e.clientY
+      dot.style.left = x + 'px'
+      dot.style.top = y + 'px'
+      ring.style.left = x + 'px'
+      ring.style.top = y + 'px'
+
+      const onLight = isOverLight(x, y)
+      dot.classList.toggle('on-light', onLight)
+      ring.classList.toggle('on-light', onLight)
     }
 
     const onEnter = () => {
-      dot.style.width = '14px'
-      dot.style.height = '14px'
-      ring.style.width = '48px'
-      ring.style.height = '48px'
-      ring.style.borderColor = 'rgba(255,255,255,0.6)'
+      dot.classList.add('cursor--hover')
+      ring.classList.add('cursor--hover')
     }
     const onLeave = () => {
-      dot.style.width = '8px'
-      dot.style.height = '8px'
-      ring.style.width = '32px'
-      ring.style.height = '32px'
-      ring.style.borderColor = 'rgba(255,255,255,0.4)'
+      dot.classList.remove('cursor--hover')
+      ring.classList.remove('cursor--hover')
     }
 
     document.addEventListener('mousemove', onMove)

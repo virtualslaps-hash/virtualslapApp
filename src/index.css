@@ -38,6 +38,16 @@ body {
   transform: translate(-50%, -50%);
   transition: all 0.15s ease;
 }
+/* Hover over interactive elements: enlarge */
+.cursor.cursor--hover { width: 14px; height: 14px; }
+.cursor-ring.cursor--hover {
+  width: 48px; height: 48px;
+  border-color: rgba(255,255,255,0.6);
+}
+/* Light-background sections: invert to black */
+.cursor.on-light { background: #000; }
+.cursor-ring.on-light { border-color: rgba(0,0,0,0.4); }
+.cursor-ring.cursor--hover.on-light { border-color: rgba(0,0,0,0.6); }
 
 /* ---------- Dot canvas ---------- */
 #dot-canvas {

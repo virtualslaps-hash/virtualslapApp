@@ -20,7 +20,7 @@ const NUMBERS = [
 
 export default function Market() {
   return (
-    <section className="bg-white text-black py-[120px] px-12 max-md:py-20 max-md:px-6" id="market">
+    <section data-cursor="light" className="bg-white text-black py-[120px] px-12 max-md:py-20 max-md:px-6" id="market">
       <SectionLabel onLight><span className="text-[#B8860B]">004</span> — Why Now</SectionLabel>
       <p className="big-statement reveal reveal-delay-1 font-display font-bold leading-[1.15] tracking-[-0.02em] max-w-[900px] text-black">
         One of the largest<br />
