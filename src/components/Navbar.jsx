@@ -21,7 +21,7 @@ export default function Navbar() {
       <a
         href="#"
         className="flex items-center no-underline italic font-serif"
-        style={{fontSize: "75px"}}
+        style={{fontSize: "60px"}}
       >
         {/* <img
           src="/assets/vs_logo_white.png"
