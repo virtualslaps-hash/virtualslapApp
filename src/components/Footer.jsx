@@ -23,9 +23,16 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      <div className="flex items-center font-serif italic" style={{fontSize: "38px"}}>
-      Virtual Sla<span className="text-brand-yellow">p</span>s
-      </div>
+      <a
+        href="#"
+        className="flex items-center no-underline"
+      >
+        <img
+          src="/assets/vs_logo_bw_400.png"
+          alt="Virtual Slaps"
+          className="h-16 w-auto"
+        />
+      </a>
     </footer>
   )
 }
