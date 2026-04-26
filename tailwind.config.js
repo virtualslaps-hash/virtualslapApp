@@ -9,7 +9,7 @@ export default {
           white: '#ffffff',
           offwhite: '#e8e8e0',
           dim: '#888880',
-          yellow: '#D4A017',
+          yellow: '#e8a208',
           yellowDim: '#8B6D0E',
         },
         border: {

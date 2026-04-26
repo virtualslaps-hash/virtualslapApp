@@ -23,7 +23,7 @@ export default function Navbar() {
         className="flex items-center no-underline"
       >
         <img
-          src="/assets/vs_logo_bw_400.png"
+          src="/assets/vs_logo_animated.gif"
           alt="Virtual Slaps"
           className="h-24 w-auto"
         />
