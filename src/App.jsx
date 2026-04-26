@@ -16,7 +16,7 @@ export default function App() {
   useReveal()
   return (
     <>
-      <Cursor />
+      {/* <Cursor /> */}
       <DotCanvas />
       <div className="radial-center" />
       <Navbar />
