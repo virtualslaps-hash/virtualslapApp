@@ -16,6 +16,7 @@ export default function Navbar() {
         'border-b border-transparent transition-[border-color,background] duration-300',
         scrolled ? 'bg-black/80 backdrop-blur-md !border-white/10' : '',
         'max-md:px-6 max-md:py-5',
+        'landscape:max-lg:px-4 landscape:max-lg:py-2',
       ].join(' ')}
     >
       <a
@@ -25,7 +26,7 @@ export default function Navbar() {
         <img
           src="/assets/vs_logo_animated.gif"
           alt="Virtual Slaps"
-          className="h-36 w-auto"
+          className="h-36 w-auto max-md:h-24 landscape:max-lg:h-10"
         />
       </a>
 

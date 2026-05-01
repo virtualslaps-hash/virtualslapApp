@@ -2,8 +2,8 @@ import SlapSlay from './SlapSlay.jsx'
 
 export default function Hero() {
   return (
-    <section className="hero min-h-screen flex flex-col justify-end px-12 pb-20 max-md:px-6 max-md:pb-[60px]">
-      <h1 className="hero-headline reveal reveal-delay-1 font-display font-extrabold leading-[0.9] tracking-[-0.03em] uppercase mb-12">
+    <section className="hero min-h-screen flex flex-col justify-end px-12 pb-20 max-md:px-6 max-md:pb-[60px] landscape:max-lg:pt-20 landscape:max-lg:pb-6">
+      <h1 className="hero-headline reveal reveal-delay-1 font-display font-extrabold leading-[0.9] tracking-[-0.03em] uppercase mb-12 landscape:max-lg:mb-4">
         Build<br />
         to<br />
         <em className="font-serif italic font-normal normal-case tracking-[-0.02em]">
