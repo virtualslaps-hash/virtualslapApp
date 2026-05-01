@@ -26,7 +26,7 @@ export default function Navbar() {
         <img
           src="/assets/vs_logo_animated.gif"
           alt="Virtual Slaps"
-          className="h-36 w-auto max-md:h-24 landscape:max-lg:h-10"
+          className="h-36 w-auto max-md:h-28 max-sm:h-24 landscape:max-lg:h-24 [@media(orientation:landscape)_and_(max-height:500px)]:!h-10"
         />
       </a>
 
