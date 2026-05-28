@@ -12,6 +12,7 @@ import CTA from './components/CTA.jsx'
 import Footer from './components/Footer.jsx'
 import PrivacyPolicy from './components/PrivacyPolicy.jsx'
 import TermsOfService from './components/TermsOfService.jsx'
+import StaticGame from './components/StaticGame.jsx'
 import { useReveal } from './hooks/useReveal.js'
 
 function Home() {
@@ -42,6 +43,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/staticgame" element={<StaticGame />} />
       </Routes>
     </>
   )
