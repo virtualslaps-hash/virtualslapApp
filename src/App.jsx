@@ -11,6 +11,7 @@ import Positioning from './components/Positioning.jsx'
 import CTA from './components/CTA.jsx'
 import Footer from './components/Footer.jsx'
 import PrivacyPolicy from './components/PrivacyPolicy.jsx'
+import TermsOfService from './components/TermsOfService.jsx'
 import { useReveal } from './hooks/useReveal.js'
 
 function Home() {
@@ -40,6 +41,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
       </Routes>
     </>
   )
