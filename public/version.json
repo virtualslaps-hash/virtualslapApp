@@ -1,0 +1,31 @@
+{
+  "_readme": [
+    "Update manifest for the Virtual Slaps games. Served as a static file from",
+    "https://virtualslaps.com/version.json (Vite copies public/ to the site root).",
+    "",
+    "Each game's in-app check compares its installed versionCode against",
+    "latestVersionCode below. Raise a value ONLY AFTER that version is live in",
+    "Play production, or players will be nudged toward a build they cannot get.",
+    "",
+    "message: optional one-line text shown in the banner. Keep it under ~40 chars.",
+    "         Leave empty to use the default wording."
+  ],
+  "updatedAt": "2026-08-23",
+  "games": {
+    "staticgame": {
+      "latestVersionCode": 7,
+      "latestVersionName": "1.4",
+      "message": ""
+    },
+    "phasegame": {
+      "latestVersionCode": 2,
+      "latestVersionName": "1.1",
+      "message": ""
+    },
+    "relaygame": {
+      "latestVersionCode": 2,
+      "latestVersionName": "1.1",
+      "message": ""
+    }
+  }
+}
