@@ -10,12 +10,12 @@
     "message: optional one-line text shown in the banner. Keep it under ~40 chars.",
     "         Leave empty to use the default wording."
   ],
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-24",
   "games": {
     "staticgame": {
-      "latestVersionCode": 7,
-      "latestVersionName": "1.4",
-      "message": ""
+      "latestVersionCode": 999,
+      "latestVersionName": "9.9",
+      "message": "TEST BANNER - not a real update"
     },
     "phasegame": {
       "latestVersionCode": 2,
@@ -27,5 +27,6 @@
       "latestVersionName": "1.1",
       "message": ""
     }
-  }
+  },
+  "_TESTING": "TEMPORARY: staticgame is set to a fake code to verify the update banner. Restore from _backups/version.json.real (staticgame -> 7 / 1.4) as soon as the test is done."
 }
