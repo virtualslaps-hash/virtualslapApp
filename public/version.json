@@ -10,22 +10,23 @@
     "message: optional one-line text shown in the banner. Keep it under ~40 chars.",
     "         Leave empty to use the default wording."
   ],
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-24",
   "games": {
     "staticgame": {
-      "latestVersionCode": 7,
-      "latestVersionName": "1.4",
-      "message": ""
+      "latestVersionCode": 999,
+      "latestVersionName": "9.9",
+      "message": "TEST - STATIC banner"
     },
     "phasegame": {
-      "latestVersionCode": 2,
-      "latestVersionName": "1.1",
-      "message": ""
+      "latestVersionCode": 999,
+      "latestVersionName": "9.9",
+      "message": "TEST - PHASE banner"
     },
     "relaygame": {
-      "latestVersionCode": 2,
-      "latestVersionName": "1.1",
-      "message": ""
+      "latestVersionCode": 999,
+      "latestVersionName": "9.9",
+      "message": "TEST - RELAY banner"
     }
-  }
+  },
+  "_TESTING": "TEMPORARY \u2014 all three games set to a fake code to verify the update banner. Restore with ./restore-version-json.sh from the Virtual Slaps folder (staticgame 7/1.4, phasegame 2/1.1, relaygame 2/1.1) and push again."
 }
